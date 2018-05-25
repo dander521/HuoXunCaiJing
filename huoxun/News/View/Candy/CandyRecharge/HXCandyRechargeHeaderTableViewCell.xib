@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" indentationWidth="10" rowHeight="141" id="KGk-i7-Jjw" customClass="HXCandyRechargeHeaderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="143"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="142.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BM-Ey-ELF">
+                        <rect key="frame" x="15" y="73" width="290" height="0.5"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="gqQ-CD-XBj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入充值积分数量" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6ce-Tq-eJi">
+                        <rect key="frame" x="15" y="30" width="290" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Toy-M1-heb"/>
+                        </constraints>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择支付类型" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zEd-vm-nsf">
+                        <rect key="frame" x="15" y="113.5" width="107.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6BM-Ey-ELF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="5W6-Pl-lYy"/>
+                    <constraint firstItem="6ce-Tq-eJi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="6uj-cX-6b9"/>
+                    <constraint firstItem="6BM-Ey-ELF" firstAttribute="top" secondItem="6ce-Tq-eJi" secondAttribute="bottom" constant="3" id="FEg-nI-25M"/>
+                    <constraint firstAttribute="trailing" secondItem="6BM-Ey-ELF" secondAttribute="trailing" constant="15" id="GwD-q2-h4O"/>
+                    <constraint firstItem="zEd-vm-nsf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bJ5-jN-e43"/>
+                    <constraint firstItem="6ce-Tq-eJi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="nPi-EU-w1t"/>
+                    <constraint firstItem="zEd-vm-nsf" firstAttribute="top" secondItem="6BM-Ey-ELF" secondAttribute="bottom" constant="40" id="rAR-rf-BNS"/>
+                    <constraint firstAttribute="trailing" secondItem="6ce-Tq-eJi" secondAttribute="trailing" constant="15" id="xHm-bY-0nu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="inputTF" destination="6ce-Tq-eJi" id="bRx-5t-568"/>
+            </connections>
+            <point key="canvasLocation" x="51" y="66.5"/>
+        </tableViewCell>
+    </objects>
+</document>

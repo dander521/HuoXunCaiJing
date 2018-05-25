@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="HXThirdlibShareView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jx0-8b-fPv">
+                    <rect key="frame" x="15" y="7" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Qrf-CE-kpO"/>
+                        <constraint firstAttribute="width" constant="40" id="TAB-xu-1nR"/>
+                    </constraints>
+                    <state key="normal" image="ic_nav_arrow"/>
+                    <connections>
+                        <action selector="touchActionButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="fAp-GB-Rqk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKO-ai-ndX">
+                    <rect key="frame" x="85" y="9" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="36" id="TXg-62-qvp"/>
+                        <constraint firstAttribute="height" constant="36" id="kHV-wu-PIk"/>
+                    </constraints>
+                    <state key="normal" image="weixin"/>
+                    <connections>
+                        <action selector="touchActionButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="AVh-YY-Wk6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8wp-W5-pyz">
+                    <rect key="frame" x="141" y="9" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="G3a-03-nwr"/>
+                        <constraint firstAttribute="width" constant="36" id="gIy-qE-Tqj"/>
+                    </constraints>
+                    <state key="normal" image="weixinquan"/>
+                    <connections>
+                        <action selector="touchActionButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="cgy-oI-Kxp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fyn-n1-15b">
+                    <rect key="frame" x="197" y="9" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="GXP-cN-L1q"/>
+                        <constraint firstAttribute="width" constant="36" id="Stl-fe-0M9"/>
+                    </constraints>
+                    <state key="normal" image="qq"/>
+                    <connections>
+                        <action selector="touchActionButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="fOH-j5-Zxq"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcN-56-Gov">
+                    <rect key="frame" x="253" y="9" width="36" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="2Xz-hn-3nD"/>
+                        <constraint firstAttribute="width" constant="36" id="am6-Dj-LrR"/>
+                    </constraints>
+                    <state key="normal" image="qqkj"/>
+                    <connections>
+                        <action selector="touchActionButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="JEB-Lv-qU3"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxS-U5-UBx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8wp-W5-pyz" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="1R6-GL-pDm"/>
+                <constraint firstItem="RcN-56-Gov" firstAttribute="leading" secondItem="fyn-n1-15b" secondAttribute="trailing" constant="20" id="1fR-Hz-2AM"/>
+                <constraint firstItem="8wp-W5-pyz" firstAttribute="leading" secondItem="ZKO-ai-ndX" secondAttribute="trailing" constant="20" id="2GB-fu-70f"/>
+                <constraint firstItem="jx0-8b-fPv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="B0b-y2-ixM"/>
+                <constraint firstItem="ZKO-ai-ndX" firstAttribute="leading" secondItem="jx0-8b-fPv" secondAttribute="trailing" constant="30" id="DPV-i0-450"/>
+                <constraint firstItem="RcN-56-Gov" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="DYb-0x-SuU"/>
+                <constraint firstItem="fyn-n1-15b" firstAttribute="leading" secondItem="8wp-W5-pyz" secondAttribute="trailing" constant="20" id="JcK-Zh-Zed"/>
+                <constraint firstItem="ZKO-ai-ndX" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="aGq-vZ-fIA"/>
+                <constraint firstItem="fyn-n1-15b" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gkH-Ar-sXn"/>
+                <constraint firstItem="jx0-8b-fPv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="q1c-1X-r8C"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="272" y="-177"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_nav_arrow" width="12" height="21"/>
+        <image name="qq" width="49" height="49"/>
+        <image name="qqkj" width="49" height="49"/>
+        <image name="weixin" width="49" height="49"/>
+        <image name="weixinquan" width="49" height="49"/>
+    </resources>
+</document>

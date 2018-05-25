@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="136" id="KGk-i7-Jjw" customClass="HXFlashListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="135.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="time" translatesAutoresizingMaskIntoConstraints="NO" id="0ro-QG-f6Z">
+                        <rect key="frame" x="90" y="15" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="Xqp-jB-2UF"/>
+                            <constraint firstAttribute="height" constant="14" id="ZLl-HV-oKv"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="7天前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ugn-y8-8bX">
+                        <rect key="frame" x="112" y="13" width="36.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.60392156862745094" green="0.60392156862745094" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share" translatesAutoresizingMaskIntoConstraints="NO" id="lUl-3I-WFi">
+                        <rect key="frame" x="284.5" y="14" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="uWq-VJ-dbT"/>
+                            <constraint firstAttribute="height" constant="15" id="y9v-BF-PjJ"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVa-55-bVZ">
+                        <rect key="frame" x="272" y="1.5" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="6uY-Jd-Sd0"/>
+                            <constraint firstAttribute="width" constant="40" id="aJc-gz-foI"/>
+                        </constraints>
+                        <connections>
+                            <action selector="touchShareButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uFJ-p5-kO1"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTb-mJ-7PC">
+                        <rect key="frame" x="90" y="51.5" width="215" height="74"/>
+                        <string key="text">大3月2日6时40分,墨江县文武乡供销社生资门市部因电线短路引起火灾,烧毁建筑物面积615平方米,受灾11户14人,直接经济损失口万余元。大3月5日3时叨分,西盟县他郎村一社一村民家因烤火不慎发生火灾,受灾105户525人,死1人,烧毁粮食4if78公斤,直接经济损失</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.1843137255" green="0.1843137255" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="B1L-Ec-Dd0">
+                        <rect key="frame" x="15" y="15" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="pvr-Zc-Ic7"/>
+                            <constraint firstAttribute="height" constant="60" id="wD3-Qz-c8B"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xly-WA-SCe">
+                        <rect key="frame" x="15" y="83" width="60" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="NVa-55-bVZ" secondAttribute="trailing" constant="8" id="3b6-u8-Tdk"/>
+                    <constraint firstItem="0ro-QG-f6Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="800" constant="15" id="4Fw-0K-ZzT"/>
+                    <constraint firstItem="B1L-Ec-Dd0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="5W6-Xp-h5l"/>
+                    <constraint firstItem="xly-WA-SCe" firstAttribute="leading" secondItem="B1L-Ec-Dd0" secondAttribute="leading" id="9ct-SR-htF"/>
+                    <constraint firstItem="gTb-mJ-7PC" firstAttribute="top" secondItem="NVa-55-bVZ" secondAttribute="bottom" constant="10" id="9ks-lJ-BBK"/>
+                    <constraint firstItem="Ugn-y8-8bX" firstAttribute="centerY" secondItem="0ro-QG-f6Z" secondAttribute="centerY" id="ANg-Xh-7MY"/>
+                    <constraint firstAttribute="bottom" secondItem="gTb-mJ-7PC" secondAttribute="bottom" constant="10" id="B75-1R-eY2"/>
+                    <constraint firstItem="Ugn-y8-8bX" firstAttribute="leading" secondItem="0ro-QG-f6Z" secondAttribute="trailing" constant="8" id="FFq-X8-VvQ"/>
+                    <constraint firstAttribute="trailing" secondItem="gTb-mJ-7PC" secondAttribute="trailing" constant="15" id="FT6-W2-MF3"/>
+                    <constraint firstItem="gTb-mJ-7PC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="800" constant="15" id="N3h-33-rwl"/>
+                    <constraint firstItem="gTb-mJ-7PC" firstAttribute="leading" secondItem="B1L-Ec-Dd0" secondAttribute="trailing" constant="15" id="RC3-Te-HAd"/>
+                    <constraint firstItem="0ro-QG-f6Z" firstAttribute="leading" secondItem="B1L-Ec-Dd0" secondAttribute="trailing" constant="15" id="RZq-Ln-q2G"/>
+                    <constraint firstItem="lUl-3I-WFi" firstAttribute="centerX" secondItem="NVa-55-bVZ" secondAttribute="centerX" id="RZs-6f-Bnq"/>
+                    <constraint firstItem="lUl-3I-WFi" firstAttribute="centerY" secondItem="NVa-55-bVZ" secondAttribute="centerY" id="SJv-4j-qCW"/>
+                    <constraint firstItem="B1L-Ec-Dd0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="ZV1-Ds-6nJ"/>
+                    <constraint firstItem="xly-WA-SCe" firstAttribute="trailing" secondItem="B1L-Ec-Dd0" secondAttribute="trailing" id="aVS-Ei-iU7"/>
+                    <constraint firstItem="0ro-QG-f6Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="goN-58-brc"/>
+                    <constraint firstItem="NVa-55-bVZ" firstAttribute="centerY" secondItem="Ugn-y8-8bX" secondAttribute="centerY" id="p7Q-lx-vQr"/>
+                    <constraint firstItem="xly-WA-SCe" firstAttribute="top" secondItem="B1L-Ec-Dd0" secondAttribute="bottom" constant="8" id="pQW-NW-tt2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="contentLabel" destination="gTb-mJ-7PC" id="mr8-kJ-lG1"/>
+                <outlet property="iconImageView" destination="B1L-Ec-Dd0" id="ROt-VE-AVn"/>
+                <outlet property="nameLabel" destination="xly-WA-SCe" id="yTz-bA-Hae"/>
+                <outlet property="shareButton" destination="NVa-55-bVZ" id="yDy-l8-0sV"/>
+                <outlet property="shareImageView" destination="lUl-3I-WFi" id="hc4-J3-Dnc"/>
+                <outlet property="timeLabel" destination="Ugn-y8-8bX" id="d4e-jy-D2b"/>
+            </connections>
+            <point key="canvasLocation" x="-13" y="-37"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="photo" width="110" height="80"/>
+        <image name="share" width="14" height="14"/>
+        <image name="time" width="13" height="13"/>
+    </resources>
+</document>

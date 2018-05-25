@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gTV-IL-0wX" customClass="TXTopItemCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIG-QI-abE">
+                        <rect key="frame" x="25.5" y="21" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqF-W5-uem">
+                        <rect key="frame" x="25.5" y="52" width="29" height="2"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.12941176469999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="qcy-NB-bii"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.90196078431372551" green="0.12941176470588234" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="SIG-QI-abE" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="0JE-zB-HYD"/>
+                <constraint firstItem="SIG-QI-abE" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="IPd-HB-IEe"/>
+                <constraint firstAttribute="bottom" secondItem="TqF-W5-uem" secondAttribute="bottom" constant="6" id="d4I-vZ-trk"/>
+                <constraint firstItem="TqF-W5-uem" firstAttribute="width" secondItem="SIG-QI-abE" secondAttribute="width" id="oys-GY-aLI"/>
+                <constraint firstItem="TqF-W5-uem" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="v6S-Uw-jGC"/>
+            </constraints>
+            <connections>
+                <outlet property="lineLabel" destination="TqF-W5-uem" id="WJy-ih-aLF"/>
+                <outlet property="tagLabel" destination="SIG-QI-abE" id="rIC-oA-wI9"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

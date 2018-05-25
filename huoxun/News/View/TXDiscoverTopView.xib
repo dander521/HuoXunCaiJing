@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="uSh-rW-2SH" customClass="TXDiscoverTopView">
+            <rect key="frame" x="0.0" y="0.0" width="443" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f11-6p-qyk">
+                    <rect key="frame" x="0.0" y="59" width="443" height="3"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="3" id="LGC-WP-tei"/>
+                        <constraint firstAttribute="height" constant="3" id="ggK-0n-ycX"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTK-cB-tAd">
+                    <rect key="frame" x="0.0" y="0.0" width="443" height="60"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Qs3-WZ-M9i">
+                            <rect key="frame" x="0.0" y="0.0" width="443" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="OwI-VD-fxt">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Qs3-WZ-M9i" secondAttribute="bottom" id="Eyd-WZ-aWK"/>
+                        <constraint firstItem="Qs3-WZ-M9i" firstAttribute="leading" secondItem="hTK-cB-tAd" secondAttribute="leading" id="fMK-KM-mwJ"/>
+                        <constraint firstAttribute="trailing" secondItem="Qs3-WZ-M9i" secondAttribute="trailing" id="fqv-GA-0LV"/>
+                        <constraint firstItem="Qs3-WZ-M9i" firstAttribute="top" secondItem="hTK-cB-tAd" secondAttribute="top" id="yPY-Oq-Ny6"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wxo-8f-oQf">
+                    <rect key="frame" x="393" y="0.0" width="50" height="62"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="tla-cK-hsn"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="hTK-cB-tAd" secondAttribute="bottom" constant="2" id="ALy-sO-4st"/>
+                <constraint firstAttribute="trailing" secondItem="f11-6p-qyk" secondAttribute="trailing" id="HAH-Fu-fOO"/>
+                <constraint firstItem="Wxo-8f-oQf" firstAttribute="top" secondItem="uSh-rW-2SH" secondAttribute="top" id="O7w-6f-raH"/>
+                <constraint firstAttribute="trailing" secondItem="hTK-cB-tAd" secondAttribute="trailing" id="SLL-nc-lIS"/>
+                <constraint firstItem="f11-6p-qyk" firstAttribute="leading" secondItem="uSh-rW-2SH" secondAttribute="leading" id="ajW-kc-9HQ"/>
+                <constraint firstAttribute="trailing" secondItem="Wxo-8f-oQf" secondAttribute="trailing" id="e3X-sc-iG9"/>
+                <constraint firstItem="hTK-cB-tAd" firstAttribute="top" secondItem="uSh-rW-2SH" secondAttribute="top" id="eE4-TA-v1I"/>
+                <constraint firstAttribute="bottom" secondItem="Wxo-8f-oQf" secondAttribute="bottom" id="hfE-5r-VTn"/>
+                <constraint firstItem="hTK-cB-tAd" firstAttribute="leading" secondItem="uSh-rW-2SH" secondAttribute="leading" id="huh-zl-UWe"/>
+                <constraint firstAttribute="bottom" secondItem="f11-6p-qyk" secondAttribute="bottom" id="nGc-x3-HIV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomView" destination="f11-6p-qyk" id="Jhv-Zm-sSH"/>
+                <outlet property="collectionView" destination="Qs3-WZ-M9i" id="yPQ-Jx-GKt"/>
+                <outlet property="myView" destination="Wxo-8f-oQf" id="nf4-J3-Hxx"/>
+                <outlet property="shadowView" destination="hTK-cB-tAd" id="bXH-aC-SUJ"/>
+            </connections>
+            <point key="canvasLocation" x="-223.5" y="141"/>
+        </view>
+    </objects>
+</document>

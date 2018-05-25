@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="195" id="KGk-i7-Jjw" customClass="HXProjectHeaderTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou_left" translatesAutoresizingMaskIntoConstraints="NO" id="K6J-ZU-UCr">
+                        <rect key="frame" x="10" y="87" width="14" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="nTz-0Z-HFH"/>
+                            <constraint firstAttribute="height" constant="26" id="nf9-1o-ewo"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jiantou_right" translatesAutoresizingMaskIntoConstraints="NO" id="WtQ-lo-q1y">
+                        <rect key="frame" x="296" y="87" width="14" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="4Da-q0-HYG"/>
+                            <constraint firstAttribute="width" constant="14" id="JJu-HI-LAT"/>
+                        </constraints>
+                    </imageView>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Oqs-xq-v09">
+                        <rect key="frame" x="40" y="8" width="240" height="183.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AYY-zX-Tjd">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyF-6Y-Pag">
+                        <rect key="frame" x="280" y="70" width="40" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="39n-4t-Yqn"/>
+                            <constraint firstAttribute="height" constant="60" id="D8G-74-5kQ"/>
+                        </constraints>
+                        <connections>
+                            <action selector="touchRightButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PxK-Pl-W8O"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ooa-mw-88y">
+                        <rect key="frame" x="0.0" y="69" width="40" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="Y7f-8d-jPr"/>
+                            <constraint firstAttribute="height" constant="60" id="wxk-Ad-b46"/>
+                        </constraints>
+                        <connections>
+                            <action selector="touchLeftButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="y1V-fG-VgE"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Oqs-xq-v09" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3su-rm-R2a"/>
+                    <constraint firstItem="K6J-ZU-UCr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="BG1-MB-45g"/>
+                    <constraint firstAttribute="trailing" secondItem="qyF-6Y-Pag" secondAttribute="trailing" id="HsH-dK-tLw"/>
+                    <constraint firstItem="qyF-6Y-Pag" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="LTv-hX-RiB"/>
+                    <constraint firstItem="Oqs-xq-v09" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="MO9-0e-6bN"/>
+                    <constraint firstItem="WtQ-lo-q1y" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="VFR-hm-jyj"/>
+                    <constraint firstAttribute="trailing" secondItem="WtQ-lo-q1y" secondAttribute="trailing" constant="10" id="ec9-VF-dpX"/>
+                    <constraint firstItem="Ooa-mw-88y" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="fW7-XI-aRC"/>
+                    <constraint firstItem="Oqs-xq-v09" firstAttribute="leading" secondItem="Ooa-mw-88y" secondAttribute="trailing" id="oMM-G8-cPu"/>
+                    <constraint firstItem="qyF-6Y-Pag" firstAttribute="leading" secondItem="Oqs-xq-v09" secondAttribute="trailing" id="pDN-DD-EAe"/>
+                    <constraint firstItem="K6J-ZU-UCr" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="r5J-rc-3Ej"/>
+                    <constraint firstAttribute="bottom" secondItem="Oqs-xq-v09" secondAttribute="bottom" constant="8" id="vA4-1F-GQ3"/>
+                    <constraint firstItem="Ooa-mw-88y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vqN-rO-9KC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="collectionView" destination="Oqs-xq-v09" id="2Ni-NP-HZs"/>
+                <outlet property="leftImg" destination="K6J-ZU-UCr" id="sDn-vf-PPb"/>
+                <outlet property="rightImg" destination="WtQ-lo-q1y" id="1MS-5u-iCZ"/>
+            </connections>
+            <point key="canvasLocation" x="115" y="98"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="jiantou_left" width="11" height="19"/>
+        <image name="jiantou_right" width="9" height="15"/>
+    </resources>
+</document>

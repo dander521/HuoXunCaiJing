@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="137" id="KGk-i7-Jjw" customClass="HXInfoDesTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="136.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人介绍" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njF-mY-igY">
+                        <rect key="frame" x="15" y="10" width="57.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="57.5" id="R08-DU-KQ4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XMU-9p-mBP">
+                        <rect key="frame" x="92.5" y="2" width="212.5" height="132.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="njF-mY-igY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Miw-BM-33w"/>
+                    <constraint firstItem="XMU-9p-mBP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="Oeh-bo-IqL"/>
+                    <constraint firstAttribute="bottom" secondItem="XMU-9p-mBP" secondAttribute="bottom" constant="2" id="Oh1-bw-azZ"/>
+                    <constraint firstItem="njF-mY-igY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Q9n-Ub-mrd"/>
+                    <constraint firstAttribute="trailing" secondItem="XMU-9p-mBP" secondAttribute="trailing" constant="15" id="W9a-Vd-e7t"/>
+                    <constraint firstItem="XMU-9p-mBP" firstAttribute="leading" secondItem="njF-mY-igY" secondAttribute="trailing" constant="20" id="iyi-eM-FZs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="contentTV" destination="XMU-9p-mBP" id="g6S-K6-7Zg"/>
+                <outlet property="desLabel" destination="njF-mY-igY" id="1mR-gn-PcP"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="83"/>
+        </tableViewCell>
+    </objects>
+</document>

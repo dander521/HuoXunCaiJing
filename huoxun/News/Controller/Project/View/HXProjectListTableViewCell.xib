@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="168" id="KGk-i7-Jjw" customClass="HXProjectListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="169.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" translatesAutoresizingMaskIntoConstraints="NO" id="5BE-U6-6OF">
+                        <rect key="frame" x="30" y="23.5" width="43" height="43"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43" id="6na-Wt-Q1f"/>
+                            <constraint firstAttribute="width" constant="43" id="xYQ-JT-8cY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bitcoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJm-xz-b2g">
+                        <rect key="frame" x="96" y="23.5" width="47" height="16.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BTC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jay-ZF-NPR">
+                        <rect key="frame" x="151" y="24" width="25.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="se4-fh-mpw">
+                        <rect key="frame" x="96" y="45" width="209" height="62.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="62.5" id="0Sy-ct-MZu"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="云消息传递 APNs 接口使用 Apple 推送通知服务 (APNs) 向您的 iOS 应消息传递 APNs 接口使用 Apple 推送通知服务 (APNs) 向您的 iOS 应用发送大小不超过 4KB 的消息">
+                                <attributes>
+                                    <color key="NSColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineHeightMultiple="1.6000000000000001" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRn-tj-kw3">
+                        <rect key="frame" x="96" y="122.5" width="70" height="24"/>
+                        <color key="backgroundColor" red="0.90196078430000004" green="0.12941176469999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="jdU-rK-Req"/>
+                            <constraint firstAttribute="width" constant="70" id="nOr-bw-xNU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="查看"/>
+                        <connections>
+                            <action selector="touchCheckButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0Rs-J3-SMx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQD-QB-tez">
+                        <rect key="frame" x="176" y="122.5" width="70" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="JHE-p4-zOi"/>
+                            <constraint firstAttribute="height" constant="24" id="LkF-aU-9nx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="白皮书">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="touchWhitePaperButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4bg-qa-ep9"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="se4-fh-mpw" firstAttribute="top" secondItem="EJm-xz-b2g" secondAttribute="bottom" constant="5" id="2fi-Bt-5Du"/>
+                    <constraint firstAttribute="bottom" secondItem="GRn-tj-kw3" secondAttribute="bottom" constant="23" id="4O3-IE-vr6"/>
+                    <constraint firstItem="5BE-U6-6OF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="AOA-j5-tQT"/>
+                    <constraint firstItem="EJm-xz-b2g" firstAttribute="top" secondItem="5BE-U6-6OF" secondAttribute="top" id="Edq-ba-XeV"/>
+                    <constraint firstItem="GRn-tj-kw3" firstAttribute="leading" secondItem="5BE-U6-6OF" secondAttribute="trailing" constant="23" id="I9J-vv-Fzf"/>
+                    <constraint firstItem="GRn-tj-kw3" firstAttribute="top" secondItem="se4-fh-mpw" secondAttribute="bottom" constant="15" id="LKW-qG-Wdz"/>
+                    <constraint firstItem="EJm-xz-b2g" firstAttribute="leading" secondItem="5BE-U6-6OF" secondAttribute="trailing" constant="23" id="MMz-LA-LGB"/>
+                    <constraint firstItem="zQD-QB-tez" firstAttribute="leading" secondItem="GRn-tj-kw3" secondAttribute="trailing" constant="10" id="Mp2-1z-kVc"/>
+                    <constraint firstAttribute="trailing" secondItem="se4-fh-mpw" secondAttribute="trailing" constant="15" id="Pmf-yv-deG"/>
+                    <constraint firstItem="se4-fh-mpw" firstAttribute="leading" secondItem="5BE-U6-6OF" secondAttribute="trailing" constant="23" id="Qva-4l-rSL"/>
+                    <constraint firstItem="Jay-ZF-NPR" firstAttribute="leading" secondItem="EJm-xz-b2g" secondAttribute="trailing" constant="8" id="Z74-G6-lcm"/>
+                    <constraint firstItem="5BE-U6-6OF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="23" id="fqU-GD-tF9"/>
+                    <constraint firstItem="Jay-ZF-NPR" firstAttribute="bottom" secondItem="EJm-xz-b2g" secondAttribute="bottom" id="p7e-yg-9fa"/>
+                    <constraint firstItem="zQD-QB-tez" firstAttribute="centerY" secondItem="GRn-tj-kw3" secondAttribute="centerY" id="roG-kV-vs4"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="checkBtn" destination="GRn-tj-kw3" id="Dio-EJ-BJv"/>
+                <outlet property="coinImg" destination="5BE-U6-6OF" id="MjV-QK-zcv"/>
+                <outlet property="desLabel" destination="se4-fh-mpw" id="RHA-pW-gh3"/>
+                <outlet property="nameLabel" destination="EJm-xz-b2g" id="azJ-9W-tie"/>
+                <outlet property="shortLabel" destination="Jay-ZF-NPR" id="VEO-Iv-2Ng"/>
+                <outlet property="whitePaperBtn" destination="zQD-QB-tez" id="G2V-jC-65h"/>
+            </connections>
+            <point key="canvasLocation" x="102" y="133"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="photo" width="110" height="80"/>
+    </resources>
+</document>

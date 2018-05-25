@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" indentationWidth="10" rowHeight="236" id="KGk-i7-Jjw" customClass="HXLongBottomTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="299.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OEe-0R-mFV">
+                        <rect key="frame" x="110" y="60" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="FxB-qW-zoI"/>
+                            <constraint firstAttribute="width" constant="100" id="xFx-EB-Ybz"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享自火讯财经" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HW1-ZR-aX3">
+                        <rect key="frame" x="110" y="200" width="100" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最火的区块链资讯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vzi-42-8Qg">
+                        <rect key="frame" x="103" y="180" width="114.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.86666666670000003" green="0.0" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vzi-42-8Qg" firstAttribute="top" secondItem="OEe-0R-mFV" secondAttribute="bottom" constant="20" id="2aa-zc-0v1"/>
+                    <constraint firstItem="OEe-0R-mFV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="60" id="9lo-DN-ikY"/>
+                    <constraint firstItem="Vzi-42-8Qg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="BpN-2L-9uB"/>
+                    <constraint firstItem="HW1-ZR-aX3" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Hb5-6E-9Re"/>
+                    <constraint firstItem="OEe-0R-mFV" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="rSf-cy-OgO"/>
+                    <constraint firstItem="HW1-ZR-aX3" firstAttribute="top" secondItem="Vzi-42-8Qg" secondAttribute="bottom" constant="3" id="vbG-HK-5k7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="qrImageView" destination="OEe-0R-mFV" id="MN2-x9-YpH"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="150"/>
+        </tableViewCell>
+    </objects>
+</document>
